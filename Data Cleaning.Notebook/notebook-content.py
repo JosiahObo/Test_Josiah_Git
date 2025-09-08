@@ -24,20 +24,18 @@
 
 print('Hello World')
 
-# METADATA ********************
-
-# META {
-# META   "language": "python",
-# META   "language_group": "synapse_pyspark"
-# META }
-
 # CELL ********************
 
 print('Data cleaned')
 
-# METADATA ********************
+# CELL ********************
 
-# META {
-# META   "language": "python",
-# META   "language_group": "synapse_pyspark"
-# META }
+print('Push changes in dev branch')
+
+# CELL ********************
+
+# import pandas as pd
+
+data = {'Name': ['John', 'Jane', 'Mike'], 'Age': [28, 24, 35]}
+# df = pd.DataFrame(data)
+print(data)
