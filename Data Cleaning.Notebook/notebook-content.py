@@ -39,3 +39,10 @@ print('Push changes in dev branch')
 data = {'Name': ['John', 'Jane', 'Mike'], 'Age': [28, 24, 35]}
 # df = pd.DataFrame(data)
 print(data)
+
+# CELL ********************
+
+print('DataFrame created')
+
+# CELL ********************
+
