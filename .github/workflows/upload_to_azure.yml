@@ -1,4 +1,4 @@
-name: Upload to Azure Blob on PR Merge
+name: Upload gitfile.txt to Azure Blob on Dev PR Merge
 
 on:
   pull_request:
@@ -14,16 +14,14 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Example: create/upload a file with PR details
-      - name: Create merge info file
+      - name: Create gitfile.txt
         run: |
           echo "PR #${{ github.event.pull_request.number }} merged into Dev at $(date)" > gitfile.txt
 
-      - name: Upload file to Azure Blob Storage
+      - name: Upload gitfile.txt to Azure Blob Storage
         uses: bacongobbler/azure-blob-storage-upload@main
         with:
-          source_dir: .
+          source_dir: gitfile.txt
           container_name: fabricgitstatus
           connection_string: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
-          extra_args: '--pattern gitfile.txt'
           overwrite: 'true'
