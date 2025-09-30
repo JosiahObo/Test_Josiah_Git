@@ -26,8 +26,7 @@ print('Hello World')
 
 # CELL ********************
 
-print('Data cleaned')
+print('Push changes in dev branch')
 
 # CELL ********************
 
-print('Push changes')
