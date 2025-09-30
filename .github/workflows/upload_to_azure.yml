@@ -14,14 +14,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Create gitfile.txt
+      - name: Create upload directory and gitfile.txt
         run: |
-          echo "PR #${{ github.event.pull_request.number }} merged into Dev at $(date)" > gitfile.txt
+          mkdir -p upload
+          echo "PR #${{ github.event.pull_request.number }} merged into Dev at $(date)" > upload/gitfile.txt
 
       - name: Upload gitfile.txt to Azure Blob Storage
         uses: bacongobbler/azure-blob-storage-upload@main
         with:
-          source_dir: gitfile.txt
+          source_dir: upload
           container_name: fabricgitstatus
           connection_string: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
           overwrite: 'true'
