@@ -11,7 +11,7 @@
 
 # CELL ********************
 
-# Data Cleaning Notebook
+print('Testing first automated workflow')
 
 # METADATA ********************
 
