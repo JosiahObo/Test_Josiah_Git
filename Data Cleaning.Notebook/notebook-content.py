@@ -33,6 +33,17 @@ print('2nd Git Test')
 
 # CELL ********************
 
+print('3rd Git Test')
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# CELL ********************
+
 print('Hello World')
 
 # METADATA ********************
