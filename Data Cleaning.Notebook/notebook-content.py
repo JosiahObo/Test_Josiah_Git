@@ -22,6 +22,17 @@ print('Testing first automated workflow')
 
 # CELL ********************
 
+print('2nd Git Test')
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# CELL ********************
+
 print('Hello World')
 
 # METADATA ********************
