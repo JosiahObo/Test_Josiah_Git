@@ -22,6 +22,17 @@ print('Testing first automated workflow')
 
 # CELL ********************
 
+print('Testing private endpoint')
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# CELL ********************
+
 print('Testing2222')
 print('Test3333')
 
